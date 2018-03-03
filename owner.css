@@ -1,0 +1,21 @@
+body{
+  background-color: #C1CDCD;
+}
+input{
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+.input{
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-size: 20px;
+}
+#info{
+  font-size: 15px;
+}
