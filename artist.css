@@ -1,5 +1,5 @@
 body{
-  background-color: #C1CDCD;
+  background: linear-gradient(red, yellow);
 }
 input{
   height: 50px;
