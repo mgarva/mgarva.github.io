@@ -23,3 +23,7 @@ p{
   color: red;
   font-family: 'Indie Flower', cursive;
 }
+button{
+  display: block;
+  margin: 0 auto;
+}
