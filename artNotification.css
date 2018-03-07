@@ -12,11 +12,11 @@ body {
 }
 #header1{
   text-align: center;
-  color: #1C2A48;
-  text-shadow: 2px 2px #D2DDE5;
+  color: white;
+  text-shadow: 2px 2px #1D4B64;
 }
 p{
-  font-size: 30px;
+  font-size: 20px;
 }
 .profileImg {
     border-radius: 50%;
@@ -30,4 +30,11 @@ p{
 #profileName{
   display: flex;
   justify-content: space-around;
+}
+#header{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: black;
+
 }
