@@ -1,0 +1,15 @@
+#profImg{
+  width: 90px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+#mural{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+body{
+  background-color: orange;
+}
