@@ -1,0 +1,33 @@
+img {
+  height: 200px;
+  width: 400px;
+  margin: auto;
+  width: 30%;
+  border: 3px solid blue;
+  padding: 10px;
+}
+#profile{
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+h1{
+  text-align: center;
+}
+#img{
+  background-color: #139C5A
+}
+#uploaded{
+  background-color: blue;
+}
+#details{
+  background-color: #993232;
+}
+p{
+  color: #F9F9F9;
+}
+body{
+  background-color: #494D5B;
+}
