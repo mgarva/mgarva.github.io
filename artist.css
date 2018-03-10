@@ -21,7 +21,7 @@ select{
   height: 30px;
 }
 #quote{
-  color: red;
+  color: blue;
   font-family: 'Indie Flower', cursive;
 }
 button{
@@ -30,4 +30,16 @@ button{
 }
 a{
   text-decoration: none;
+}
+#profilePic{
+  margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+.image-preview{
+  width:400px;
+}
+.error{
+  color: #CC0000;
 }

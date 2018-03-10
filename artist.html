@@ -7,11 +7,12 @@
       <h1>I am an Artist</h1>
       <p>Please provide your contact information so other supporters of this cause can get in touch with you.</p>
       <div class="input">
-        <p>Name</p><input placeholder="(first and last)" size="40"><br>
-        <p>Phone Number</p><input size="40"><br>
-        <p>Email</p><input size="40"><br>
+        <p>First Name</p><input class="user-first-name" placeholder="(first)" size="40"><br>
+        <p>Last Name</p><input class="user-last-name" placeholder="(last)" size="40"><br>
+        <p>Phone Number</p><input class="phoneNumber" size="40"><br>
+        <p>Email</p><input class="user-email" size="40"><br>
         <p id="painting">Preferred Painting Style <br>(Don't worry if you don't see your painting style, just choose other!)</p>
-          <select>
+          <select id="paintStyle">
             <option value="">Abstract Art</option>
             <option value="">Surrealism</option>
             <option value="">Conceptual Art</option>
@@ -23,13 +24,19 @@
             <option value="">Fauvism</option>
             <option value="">Other</option>
           </select><br>
-        <p>Upload your photo</p><input placeholder="(not necessary)" size="40"><br>
-        <p>Link to your portfolio/website/social media</p><input placeholder="(not necessary)" size="40"><br>
-        <p>Your preferred borough/neighborhood</p><input placeholder="Ex.Bushwick, Brooklyn" size="40"><br>
+        <p>Upload your profile photo (not necessary):</p>
+
+        <p><input type="file" class="upload-image"></p>
+        <div><img src="" class="image-preview"></div>
+        <br>
+        <p>Link to your portfolio/website/social media (URL)<br>(If you don't have any, just say N/A)</p><input class="portfolio" placeholder="" size="40"><br>
+        <p>Your preferred borough/neighborhood</p><input class="location" placeholder="Ex.Bushwick, Brooklyn" size="40"><br>
         <p>How did you find out about this project?</p><input size="40"><br>
       </div><br>
-      <a href="artNotification.html"><button>Submit</button></a>
+      <a><button class="submit">Submit</button></a>
+      <p class="error"></p>
       <p id="quote">The greatness of a community is most accurately measured by the compassionate actions of its members - Coretta Scott King</p>
       <p>Please be aware that your information will be made public to people those who wish to contact you for purposes of this organiztion.</p>
+      <script src="artist.js"></script>
     </body>
 </html>
