@@ -23,7 +23,7 @@ function submitProfile() {
   var lastName = document.querySelector('.user-last-name').value;
   var phoneNumber = document.querySelector('.phoneNumber').value;
   var email = document.querySelector('.user-email').value;
-  var photoUrl = document.querySelector('.image-preview').value;
+  var photoUrl = imageUrl
   var portfolio = document.querySelector('.portfolio').value;
   var preferLocation = document.querySelector('.location').value;
   var preferStyle = document.querySelector('.paintStyle').value;
