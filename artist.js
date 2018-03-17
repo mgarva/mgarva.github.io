@@ -26,6 +26,7 @@ function submitProfile() {
   var photoUrl = document.querySelector('.image-preview').value;
   var portfolio = document.querySelector('.portfolio').value;
   var preferLocation = document.querySelector('.location').value;
+  var preferStyle = document.querySelector('.paintStyle').value;
 
 
   if (
@@ -35,6 +36,7 @@ function submitProfile() {
     email == '' ||
     photoUrl == '' ||
     portfolio == '' ||
+    preferStyle == '' ||
     preferLocation == ''
   ) {
     document.querySelector('.error').textContent = 'Please fill out all the fields!';
@@ -46,6 +48,7 @@ function submitProfile() {
     localStorage.photo = photoUrl;
     localStorage.portfolio = portfolio;
     localStorage.location = preferLocation;
+    localStorage.style = preferStyle;
 
     location.href = 'artNotification.html';
   }
