@@ -1,17 +1,21 @@
 <!DOCTYPE html>
     <head>
         <title>MVP Web App</title>
-        <link rel="stylesheet" type="text/css" href="artist.css">
+        <link rel="stylesheet" type="text/css" href="owner.css">
     </head>
     <body>
       <h1>I am a Wall Owner</h1>
       <p>Please provide your contact information so other supporters of this cause can get in touch with you.</p>
       <div class="input">
         <p>Name</p><input class="name" placeholder="(first and last)" size="40"><br>
-        <p>Phone Number</p><input classs="phoneNumber" size="40"><br>
+        <p>Phone Number</p><input class="phoneNumber" size="40"><br>
         <p>Email</p><input class="email" size="40"><br>
-        <p>Location of Wall</p><input placeholder="Ex.201 Art St, Brooklyn, NY" size="40"><br>
-        <p>Upload your photo of the wall</p><input placeholder="(not necessary)" size="40"><br>
+        <p>Location of Wall</p><input class="location" placeholder="Ex.201 Art St, Brooklyn, NY" size="40"><br>
+        <p>Upload a photo of your wall<br></p>
+
+        <p><input type="file" class="upload-image"></p>
+        <div><img src="" class="image-preview"></div>
+
         <p>Documentation proving you own the wall</p>
           <div id="fileUpload">
             <label for="file">Choose file to upload</label>
@@ -27,8 +31,11 @@
             <input type="radio" name="option" value="disagree"> I disagree<br>
           </form>
         </div><br>
-      <a><button>Submit</button></a>
+      <a><button class="submit" >Submit</button></a>
+      <p class="error"></p>
       <p>Please be aware that your information will be made public to people those who wish to contact you for purposes of this organiztion.</p>
       <p id="quote">The greatness of a community is most accurately measured by the compassionate actions of its members - Coretta Scott King</p>
+      <script src="owner.js"></script>
+
     </body>
 </html>

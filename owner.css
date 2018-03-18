@@ -1,5 +1,5 @@
 body{
-  background-color: #C1CDCD;
+background: linear-gradient(green, #7FE706);
 }
 input{
   height: 50px;
@@ -29,4 +29,7 @@ button{
 }
 a{
   text-decoration: none;
+}
+.image-preview{
+  width:400px;
 }

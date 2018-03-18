@@ -23,7 +23,7 @@ function submitProfile() {
   var lastName = document.querySelector('.user-last-name').value;
   var phoneNumber = document.querySelector('.phoneNumber').value;
   var email = document.querySelector('.user-email').value;
-  var photoUrl = imageUrl
+  var photoUrl = localStorage.imageUrl
   var portfolio = document.querySelector('.portfolio').value;
   var preferLocation = document.querySelector('.location').value;
   var preferStyle = document.querySelector('.paintStyle').value;
@@ -45,11 +45,10 @@ function submitProfile() {
     localStorage.lastName = lastName;
     localStorage.phoneNumber = phoneNumber;
     localStorage.email = email;
-    localStorage.photo = photoUrl;
     localStorage.portfolio = portfolio;
     localStorage.location = preferLocation;
     localStorage.style = preferStyle;
 
-    location.href = 'artNotification.html';
+    location.href = 'artProfile.html';
   }
 }
