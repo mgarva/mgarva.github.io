@@ -1,5 +1,5 @@
 document.querySelector('.upload-image').addEventListener('change', uploadImage);
-
+  localStorage.ownerImageUrl = "";
  function uploadImage() {
     console.log('insideUploadImage');
    var preview = document.querySelector('.image-preview');
@@ -25,12 +25,14 @@ function submitProfile() {
  var phoneNumber = document.querySelector('.phoneNumber').value;
  var email = document.querySelector('.email').value;
  var preferLocation = document.querySelector('.location').value;
+ var photoUrl = localStorage.ownerImageUrl
 
 
  if (
    name == '' ||
    phoneNumber == '' ||
    email == '' ||
+   photoUrl == '' ||
    preferLocation == ''
  ) {
    document.querySelector('.error').textContent = 'Please fill out all the fields!';
