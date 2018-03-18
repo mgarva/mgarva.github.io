@@ -49,6 +49,15 @@ function submitProfile() {
     localStorage.location = preferLocation;
     localStorage.style = preferStyle;
 
-    location.href = 'artProfile.html';
+    $.ajax({
+      url: "https://script.google.com/macros/s/AKfycbxu1087uPa2dFKggEVNsVCFIevaixVH-frmCOjiaoqWNZJl9RQ/exec",
+      method: "GET",
+      dataType: "json",
+      data: $('.input').serialize()
+    }).done(function (result) {
+     location.href = 'artProfile.html';
+    });
+
+
   }
 }

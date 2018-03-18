@@ -2,15 +2,16 @@
     <head>
         <title>MVP Web App</title>
         <link rel="stylesheet" type="text/css" href="owner.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
       <h1>I am a Wall Owner</h1>
       <p>Please provide your contact information so other supporters of this cause can get in touch with you.</p>
-      <div class="input">
-        <p>Name</p><input class="name" placeholder="(first and last)" size="40"><br>
-        <p>Phone Number</p><input class="phoneNumber" size="40"><br>
-        <p>Email</p><input class="email" size="40"><br>
-        <p>Location of Wall</p><input class="location" placeholder="Ex.201 Art St, Brooklyn, NY" size="40"><br>
+      <form class="input">
+        <p>Name</p><input name="name" class="name" placeholder="(first and last)" size="40"><br>
+        <p>Phone Number</p><input name="phoneNumber" class="phoneNumber" size="40"><br>
+        <p>Email</p><input name="email" class="email" size="40"><br>
+        <p>Location of Wall</p><input name="preferLocation" class="location" placeholder="Ex.201 Art St, Brooklyn, NY" size="40"><br>
         <p>Upload a photo of your wall<br></p>
 
         <p><input type="file" class="upload-image"></p>
@@ -18,7 +19,7 @@
 
         <p>You will have to email documentation proving you own the wall</p>
         <p>Any additional information?</p><textarea id="info" size="40"></textarea><br>
-      </div>
+      </form>
       <p>As owner of the wall located on ______, I give consent to artists to paint on my wall and hereby release and hold harmless this organiztion from any and all liability in connection with damages or potential problems due to their work at ______. </p>
         <div>
           <form action="">

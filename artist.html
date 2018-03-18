@@ -2,17 +2,18 @@
     <head>
         <title>MVP Web App</title>
         <link rel="stylesheet" type="text/css" href="artist.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
       <h1>I am an Artist</h1>
       <p>Please provide your contact information so other supporters of this cause can get in touch with you.</p>
-      <div class="input">
-        <p>First Name</p><input class="user-first-name" placeholder="(first)" size="40"><br>
-        <p>Last Name</p><input class="user-last-name" placeholder="(last)" size="40"><br>
-        <p>Phone Number</p><input class="phoneNumber" size="40"><br>
-        <p>Email</p><input class="user-email" size="40"><br>
+      <form class="input">
+        <p>First Name</p><input name="firstName" class="user-first-name" placeholder="(first)" size="40"><br>
+        <p>Last Name</p><input name="lastName" class="user-last-name" placeholder="(last)" size="40"><br>
+        <p>Phone Number</p><input name="phoneNumber" class="phoneNumber" size="40"><br>
+        <p>Email</p><input name="email" class="user-email" size="40"><br>
         <p id="painting">Preferred Painting Style <br>(Don't worry if you don't see your painting style, just choose other!)</p>
-          <select class="paintStyle">
+          <select class="paintStyle" name="preferStyle">
             <option value="Abstract Art">Abstract Art</option>
             <option value="Surrealism">Surrealism</option>
             <option value="Conceptual Art">Conceptual Art</option>
@@ -29,10 +30,10 @@
         <p><input type="file" class="upload-image"></p>
         <div><img src="" class="image-preview"></div>
         <br>
-        <p>Link to your portfolio/website/social media (URL)<br>(If you don't have any, just say N/A)</p><input class="portfolio" placeholder="" size="40"><br>
-        <p>Your preferred borough/neighborhood</p><input class="location" placeholder="Ex.Bushwick, Brooklyn" size="40"><br>
+        <p>Link to your portfolio/website/social media (URL)<br>(If you don't have any, just say N/A)</p><input name="portfolio" class="portfolio" placeholder="" size="40"><br>
+        <p>Your preferred borough/neighborhood</p><input name="preferLocation" class="location" placeholder="Ex.Bushwick, Brooklyn" size="40"><br>
         <p>How did you find out about this project?</p><input size="40"><br>
-      </div><br>
+      </form><br>
       <a><button class="submit">Submit</button></a>
       <p class="error"></p>
       <p id="quote">The greatness of a community is most accurately measured by the compassionate actions of its members - Coretta Scott King</p>

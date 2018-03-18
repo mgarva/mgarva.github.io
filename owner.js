@@ -42,6 +42,13 @@ function submitProfile() {
    localStorage.ownerEmail = email;
    localStorage.ownerLocation = preferLocation;
 
+   $.ajax({
+     url: "https://script.google.com/macros/s/AKfycbyrG_jqvrZe45OrkRb361wJZtglcOftHV5xhuzuReP87WenCIA/exec",
+     method: "GET",
+     dataType: "json",
+     data: $('.input').serialize()
+   }).done(function (result) {
    location.href = 'ownProfile.html';
+  });
  }
 }
