@@ -101,3 +101,10 @@ body {
     text-decoration: none;
     color: white;
 }
+.image-preview{
+  padding-bottom: 20px;
+}
+.error{
+  padding-top: 20px;
+  color: black; 
+}
