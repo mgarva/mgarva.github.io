@@ -1,32 +1,79 @@
 <!DOCTYPE html>
-    <head>
-        <title>Street Talk</title>
-        <link rel="stylesheet" type="text/css" href="artist.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    </head>
-    <body>
-      <h1>I am an Artist</h1>
-      <p>Please provide your contact information so other supporters of this cause can get in touch with you.</p>
-      <form class="input">
-        <p>First Name</p><input name="firstName" class="user-first-name" placeholder="(first)" size="40"><br>
-        <p>Last Name</p><input name="lastName" class="user-last-name" placeholder="(last)" size="40"><br>
-        <p>Phone Number</p><input name="phoneNumber" class="phoneNumber" size="40"><br>
-        <p>Email</p><input name="email" class="user-email" size="40"><br>
-        <p> Preferred Painting Style</p><input name="paintStyle" class="paintStyle" placeholder="ex.Surrealism" size="40">
+<html>
+  <head>
+    <title>Street Talk</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">
+        <img src="StreetTalk_dynamic02.png" height="70" alt="" class="logo">
+      </a>
+    </nav>
+    <div class="content artist">
+      <div class="container">
+        <h1>I am an artist</h1>
+        <form class="artist-form">
+          <div class="form-group">
+            <label>Email address</label>
+            <input type="email" name="email" class="form-control user-email">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>First name</label>
+            <input type="text" name="firstName" class="form-control user-first-name">
+          </div>
+          <div class="form-group">
+            <label>Last name</label>
+            <input type="text" name="lastName" class="form-control user-last-name">
+          </div>
+          <div class="form-group">
+            <label>Phone number</label>
+            <input type="text" name="phoneNumber" class="form-control phoneNumber">
+          </div>
+          <div class="form-group">
+            <label>Preferred neighborhood</label>
+            <input type="text" name="preferLocation" class="form-control location">
+          </div>
+          <div class="form-group">
+            <label>Portfolio link</label>
+            <input type="text" name="portfolio" class="form-control portfolio">
+          </div>
+          <div class="form-group">
+            <label>Preferred painting style</label>
+            <input type="text" name="preferStyle" class="form-control paintStyle">
+          </div>
+          <label>Upload A Profile Picture</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Upload</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input upload-image" id="inputGroupFile01">
+              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            </div>
+          </div>
+        </form>
+        <div><img src="" class="image-preview" width="200px"></div>
+        <button type="submit" class="btn btn-outline-light submit">Submit</button>
+            <p class="error"></p>
+        <p class="quote">"The greatness of a community is most accurately measured by the compassionate actions of its members"</p>
+        <p class="author">- Coretta Scott King</p>
 
-        <p>Upload your profile photo (not necessary):</p>
-
-        <p><input type="file" class="upload-image"></p>
-        <div><img src="" class="image-preview"></div>
-        <br>
-        <p>Link to your portfolio/website/social media (URL)<br>(If you don't have any, just say N/A)</p><input name="portfolio" class="portfolio" placeholder="" size="40"><br>
-        <p>Your preferred borough/neighborhood</p><input name="preferLocation" class="location" placeholder="Ex.Bushwick, Brooklyn" size="40"><br>
-        <p>How did you find out about this project?</p><input size="40"><br>
-      </form><br>
-      <a><button class="submit">Submit</button></a>
-      <p class="error"></p>
-      <p id="quote">The greatness of a community is most accurately measured by the compassionate actions of its members - Coretta Scott King</p>
-      <p>Please be aware that your information will be made public to people those who wish to contact you for purposes of this organiztion.</p>
-      <script src="artist.js"></script>
-    </body>
+        <p class="notice">Please be aware that your information will be made public to people those who wish to contact you for purposes of this organiztion.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p>Made with ❤️ in Brooklyn by Marco Garcia Nueva</p>
+        <p>Contact me <a href="about.html">here</a></p>
+      </div>
+    </div>
+    <script src="artist.js"></script>
+  </body>
 </html>
