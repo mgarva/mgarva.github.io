@@ -106,5 +106,8 @@ body {
 }
 .error{
   padding-top: 20px;
-  color: black; 
+  color: black;
+}
+.ownerColor{
+  background-color: #199521;
 }

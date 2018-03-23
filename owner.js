@@ -1,7 +1,6 @@
 document.querySelector('.upload-image').addEventListener('change', uploadImage);
   localStorage.ownerImageUrl = "";
  function uploadImage() {
-    console.log('insideUploadImage');
    var preview = document.querySelector('.image-preview');
    var file = document.querySelector('.upload-image').files[0];
    var reader = new FileReader();
@@ -20,8 +19,8 @@ document.querySelector('.upload-image').addEventListener('change', uploadImage);
 document.querySelector('.submit').addEventListener('click', submitProfile);
 
 function submitProfile() {
- var name = document.querySelector('.name').value;
-
+  var firstName = document.querySelector('.user-first-name').value;
+  var lastName = document.querySelector('.user-last-name').value;
  var phoneNumber = document.querySelector('.phoneNumber').value;
  var email = document.querySelector('.email').value;
  var preferLocation = document.querySelector('.location').value;

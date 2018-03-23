@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,11 +14,11 @@
     </nav>
     <div class="content artist">
       <div class="container">
-        <h1>I am an artist</h1>
+        <h1>I am a Wall Owner</h1>
         <form class="artist-form">
           <div class="form-group">
             <label>Email address</label>
-            <input type="email" name="email" class="form-control user-email">
+            <input type="email" name="email" class="form-control email">
           </div>
           <div class="form-group">
             <label>Password</label>
@@ -40,18 +37,11 @@
             <input type="text" name="phoneNumber" class="form-control phoneNumber">
           </div>
           <div class="form-group">
-            <label>Preferred neighborhood</label>
+            <label>Location of Wall</label>
             <input type="text" name="preferLocation" class="form-control location">
           </div>
-          <div class="form-group">
-            <label>Portfolio link</label>
-            <input type="text" name="portfolio" class="form-control portfolio">
-          </div>
-          <div class="form-group">
-            <label>Preferred painting style</label>
-            <input type="text" name="preferStyle" class="form-control paintStyle">
-          </div>
-          <label>Upload A Profile Picture</label>
+
+          <label>Upload a photo of your wall</label>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text">Upload</span>
@@ -63,6 +53,16 @@
           </div>
         </form>
         <div><img src="" class="image-preview" width="200px"></div>
+        <p>You will have to email documentation proving you own the wall</p>
+        <p>Any additional information?</p><textarea id="info" size="40"></textarea><br>
+        <p>As owner of the wall located on ______, I give consent to artists to paint on my wall and hereby release and hold harmless this organiztion from any and all liability in connection with damages or potential problems due to their work at ______. </p>
+        <div>
+          <form action="">
+            <input type="radio" name="option" value="agree"> I agree<br>
+            <input type="radio" name="option" value="disagree"> I disagree<br>
+          </form>
+        </div><br>
+
         <button type="submit" class="btn btn-outline-light submit">Submit</button>
             <p class="error"></p>
         <p class="quote">"The greatness of a community is most accurately measured by the compassionate actions of its members"</p>
@@ -77,6 +77,6 @@
         <p>Contact me <a href="about.html">here</a></p>
       </div>
     </div>
-    <script src="artist.js"></script>
+    <script src="owner.js"></script>
   </body>
 </html>
