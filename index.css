@@ -111,3 +111,11 @@ body {
 .ownerColor{
   background-color: #199521;
 }
+.info{
+  background-color: #90bddf;
+}
+.all{
+  display: flex;
+  flex-direction: column;
+  height: 100%
+}
