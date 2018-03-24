@@ -48,14 +48,14 @@ function submitProfile() {
     localStorage.portfolio = portfolio;
     localStorage.location = preferLocation;
     localStorage.style = preferStyle;
-
+    console.log($('.artist-form').serialize())
     $.ajax({
       url: "https://script.google.com/macros/s/AKfycbxu1087uPa2dFKggEVNsVCFIevaixVH-frmCOjiaoqWNZJl9RQ/exec",
       method: "GET",
       dataType: "json",
-      data: $('.input').serialize()
+      data: $('.artist-form').serialize()
     }).done(function (result) {
-     location.href = 'artProfile.html';
+      location.href = 'artProfile.html';
     });
 
 
