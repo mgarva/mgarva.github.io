@@ -1,5 +1,6 @@
 if (localStorage.length) {
-  document.querySelector('.name').textContent = localStorage.ownerName;
+  var fullName = localStorage.firstName + ' ' + localStorage.lastName;
+  document.querySelector('.name').textContent = fullName;
   document.querySelector('.phoneNumber').textContent = localStorage.ownerPhoneNumber;
   document.querySelectorAll('.email')[0].textContent = localStorage.ownerEmail;
   document.querySelectorAll('.email')[1].textContent = localStorage.ownerEmail;

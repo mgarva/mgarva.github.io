@@ -28,7 +28,8 @@ function submitProfile() {
 
 
  if (
-   name == '' ||
+   firstName == '' ||
+   lastName == '' ||
    phoneNumber == '' ||
    email == '' ||
    photoUrl == '' ||
@@ -36,7 +37,8 @@ function submitProfile() {
  ) {
    document.querySelector('.error').textContent = 'Please fill out all the fields!';
  } else {
-   localStorage.ownerName = name;
+   localStorage.ownerFirstName = firstName;
+   localStorage.ownerLastName = lastName;
    localStorage.ownerPhoneNumber = phoneNumber;
    localStorage.ownerEmail = email;
    localStorage.ownerLocation = preferLocation;
