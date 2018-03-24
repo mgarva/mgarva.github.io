@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-    <head>
-        <title>Street Talk</title>
-        <link rel="stylesheet" type="text/css" href="ownProfile.css">
-    </head>
-    <body>
-      <h1>Your Profile</h1>
-      <div id="uploaded">
-      <p>Wall Image Uploaded:</p>
-        <div>
-          <img class="wallImg" src="https://iheartthestreetart.files.wordpress.com/2014/06/img_2651.jpg?w=580">
+<html>
+  <head>
+    <title>Street Talk</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="random.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">
+        <img src="StreetTalk_dynamic02.png" height="70" alt="" class="logo">
+      </a>
+    </nav>
+    <div class="content profile">
+      <div class="container">
+        <div class="notification">
+          <h3>Thank you for signing up for Street Talk!</h3>
+          <p>You will receive a weekly newsletter to connect with artists in your area.</p>
         </div>
+        <h3><span class="name">Alex Qin</span></h3>
+        <p><img class="img-thumbnail profile-photo wallImg" src="http://alexq.in/images/blackwhite.jpg"></p>
+        <p>Email:<span class="email"> a@alexq.in</span></p>
+        <p>Phone number:<span class="phoneNumber"> 6466787625</span></p>
+        <p>Location:<span class="location"> Greenpoint</span></p>
       </div>
-      <div id="details">
-        <p><span class="pTags">Your location:</span><span class="location">Bushwick, Brooklyn</span><p>
-        <p><span class="pTags">Username:</span><span class="email">email@gmail.com</span></p>
-        <h3><span class="pTags">Contact Info:</span></h3>
-        <p><span class="pTags">Name:</span><span class="name">Ow Ner</span></p>
-        <p><span class="pTags">Phone Number:</span><span class="phoneNumber">(123)456-7890</span></p>
-        <p><span class="pTags">Email:</span><span class="email">email@gmail.com</span></p>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p>Made with ❤️ in Brooklyn by Marco Garcia Nueva</p>
+        <p>Contact me <a href="#">here</a></p>
       </div>
-      <h1>Thank you for signing up!</h1>
-      <h1>You will get a weekly email about artists around you.</h1>
-      <h1>Thank you for taking part in this cause!</h1>
-        <script src="ownProfile.js"></script>
-    </body>
+    </div>
+    <script src="ownProfile.js"></script>
+  </body>
 </html>
